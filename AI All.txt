@@ -1,0 +1,81 @@
+Columns with missing values:-
+Numeric Columns :-
+Age
+TSH
+T3
+TT4
+T4U
+FTI
+TBG
+
+
+Categorical Columns :-
+Sex
+
+
+------------------------------------------------------------------------
+Categorical columns :-
+Sex
+on_thyroxine
+query_on_thyroxine
+on_antithyroid_medication
+thyroid_surgery
+query_hypothyroid
+query_hyperthyroid
+pregnant
+sick 
+tumor
+lithium
+goitre
+TSH_measured
+T3_measured
+TT4_measured
+T4U_measured
+FTI_measured
+TBG_measured
+result
+
+----------------------------------------------------------------------------
+All the features having numeric type with missing values are imputed with mean imputation with round value 2. The categorical column 'Sex' also had some missing values. Total there were 73 datapoints which were removed. Later, for all the categorical columns, label encoding was done and the shuffled dataset was stored.  
+
+
+------------------------------------------------------------------------------
+Order of Execution -> preprocessing.py, meanimputation.py, labelencodingcategoricalvariables.py, main.py
+
+
+
+-------------------------------------------------------------------------------
+Meaning Of Each Column:-
+
+1. Age – age of the patient (Integer)
+2. Sex – gender of the patient F/M (Categorical)
+3. on_thyroxine – whether patient is currently on thyroxine medication T/F (Categorical)
+4. query_on_thyroxine – whether patient is under investigation or query for being prescribed thyroxine 
+medication T/F (Categorical)
+5. on_antithyroid_medication – whether patient is on antithyroid medication T/F (Categorical)
+6. sick – whether patient is sick T/F (Categorical)
+7. pregnant – whether patient is pregnant T/F (Categorical)
+8. thyroid_surgery – whether patient has undergone surgery related to thyroid gland T/F (Categorical)
+9. I131_treatment – whether patient is undergoing Iodine-131 for thyroid conditions T/F (Categorical)
+10. query_hypothyroid – whether patient is suspected of having hypothyroid T/F (Categorical)
+11. query_hyperthyroid – whether patient is suspected of having hypothyroid T/F (Categorical)
+12. lithium – whether patient is taking lithium medication T/F (Categorical)
+13. goitre – whether patient has a goitre or not T/F (Categorical)
+14. tumor – indicates the presence or absence of a tumor in the thyroid gland T/F (Categorical)
+15. hypopituitary – indicates presence or absence of hypopituitarism in patient T/F (Categorical)
+16. psych – whether psychological symptoms experienced by patient T/F (Categorical)
+17. TSH_measured – whether TSH (Thyroid Simulating Hormone) was measured T/F (Categorical)
+18. TSH – TSH level in blood (numeric)
+19. T3_measured – whether T3 (Triiodothyronine) was measured T/F (Categorical)
+20. T3 – T3 level in blood (numeric)
+21. TT4_measured – whether total thyroxine was measured T/F (Categorical)
+22. TT4 – Total thyroxine level in blood (numeric)
+23. T4U_measured – whether Thyroxine Uptake was measured T/F (Categorical)
+24. T4U – T4U level in the blood (numeric)
+25. FTI_measured – whether FTI (Free Thyroxine Index) was calculated T/F (Categorical)
+26. FTI – value of FTI (numeric)
+27. TBG_measured – whether TBG (Thyroxine-Binding Globulin) was measured T/F (Categorical)
+28. TBG – value of TBG (numeric)
+29. referral_source – the source through which patient was referred SVHC, SVI, STMW, SVHD, other 
+(Categorical)
+30. Class – whether patient is negative or sick (Categorical)
